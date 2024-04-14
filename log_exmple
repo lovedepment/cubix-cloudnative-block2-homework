@@ -1,0 +1,73 @@
+A  http://localhost:8080/frontapp?message=Hello hivas eredmenye:
+{
+    "msForReply": 65,
+    "backappMessage": "Hello",
+    "frontappHomeworkOwner": "Dézsi Lajos",
+    "frontappHostAddress": "172.24.0.3",
+    "backappHomeworkOwner": "Dézsi Lajos",
+    "backappHostAddress": "172.24.0.2",
+    "doExtraImageDataMatch": true
+}
+
+Kapcsolodo log az alkalmazas indulastol
+
+Attaching to backend-1, frontend-1
+backend-1   |
+backend-1   |   .   ____          _            __ _ _
+backend-1   |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+backend-1   | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+backend-1   |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+backend-1   |   '  |____| .__|_| |_|_| |_\__, | / / / /
+backend-1   |  =========|_|==============|___/=/_/_/_/
+backend-1   |  :: Spring Boot ::                (v3.2.3)
+backend-1   |
+backend-1   | 2024-04-14T14:46:29.499Z  INFO 8 --- [           main] hu.cubix.cloud.SecondHomeworkBackapp     : Starting SecondHomeworkBackapp v0.0.1-SNAPSHOT using Java 21.0.2 with PID 8 (/opt/app/app.jar started by ? in /opt/app)
+backend-1   | 2024-04-14T14:46:29.504Z  INFO 8 --- [           main] hu.cubix.cloud.SecondHomeworkBackapp     : No active profile set, falling back to 1 default profile: "default"
+frontend-1  |
+frontend-1  |   .   ____          _            __ _ _
+frontend-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+frontend-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+frontend-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+frontend-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+frontend-1  |  =========|_|==============|___/=/_/_/_/
+frontend-1  |  :: Spring Boot ::                (v3.2.3)
+frontend-1  |
+frontend-1  | 2024-04-14T14:46:30.021Z  INFO 8 --- [           main] hu.cubix.cloud.SecondHomeworkFrontapp    : Starting SecondHomeworkFrontapp v0.0.1-SNAPSHOT using Java 21.0.2 with PID 8 (/opt/app/app.jar started by ? in /opt/app)
+frontend-1  | 2024-04-14T14:46:30.033Z  INFO 8 --- [           main] hu.cubix.cloud.SecondHomeworkFrontapp    : No active profile set, falling back to 1 default profile: "default"
+backend-1   | 2024-04-14T14:46:30.959Z  INFO 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+backend-1   | 2024-04-14T14:46:30.979Z  INFO 8 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+backend-1   | 2024-04-14T14:46:30.979Z  INFO 8 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+backend-1   | 2024-04-14T14:46:31.038Z  INFO 8 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+backend-1   | 2024-04-14T14:46:31.040Z  INFO 8 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1439 ms
+frontend-1  | 2024-04-14T14:46:31.238Z  INFO 8 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97caea8d-ca05-3156-b7e9-d2aed7a2fcd0
+backend-1   | 2024-04-14T14:46:31.397Z  INFO 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+backend-1   | 2024-04-14T14:46:31.413Z  INFO 8 --- [           main] hu.cubix.cloud.SecondHomeworkBackapp     : Started SecondHomeworkBackapp in 2.654 seconds (process running for 3.226)
+frontend-1  | 2024-04-14T14:46:31.504Z  INFO 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+frontend-1  | 2024-04-14T14:46:31.515Z  INFO 8 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+frontend-1  | 2024-04-14T14:46:31.516Z  INFO 8 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+frontend-1  | 2024-04-14T14:46:31.539Z  INFO 8 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+frontend-1  | 2024-04-14T14:46:31.540Z  INFO 8 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1341 ms
+frontend-1  | 2024-04-14T14:46:31.900Z  INFO 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+frontend-1  | 2024-04-14T14:46:31.912Z  INFO 8 --- [           main] hu.cubix.cloud.SecondHomeworkFrontapp    : Started SecondHomeworkFrontapp in 2.621 seconds (process running for 3.433)
+frontend-1  | 2024-04-14T14:47:07.945Z  INFO 8 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+frontend-1  | 2024-04-14T14:47:07.946Z  INFO 8 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+frontend-1  | 2024-04-14T14:47:07.947Z  INFO 8 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+frontend-1  | 2024-04-14T14:47:07.967Z  INFO 8 --- [nio-8080-exec-1] h.c.c.api.controller.FrontappController  : Local endpoint was called - no call will be made to backapp - message was: null
+frontend-1  | 2024-04-14T14:47:16.485Z  INFO 8 --- [nio-8080-exec-3] h.c.c.api.controller.FrontappController  : Preparing for calling backapp - message was: Hello
+frontend-1  | 2024-04-14T14:47:16.485Z  INFO 8 --- [nio-8080-exec-3] h.c.c.api.controller.FrontappController  : Calling backapp
+backend-1   | 2024-04-14T14:47:16.525Z  INFO 8 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+backend-1   | 2024-04-14T14:47:16.525Z  INFO 8 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+backend-1   | 2024-04-14T14:47:16.526Z  INFO 8 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+backend-1   | 2024-04-14T14:47:16.550Z  INFO 8 --- [nio-8081-exec-1] hu.cubix.cloud.api.BackappController     : Request arrived with message Hello
+backend-1   | 2024-04-14T14:47:16.552Z  INFO 8 --- [nio-8081-exec-1] hu.cubix.cloud.api.BackappController     : Returning response: BackappResponse[time=2024-04-14T14:47:16.550749191, message=Hello, homeworkOwner=Dézsi Lajos, hostAddress=172.24.0.2, extraImageData=Cubix training]
+frontend-1  | 2024-04-14T14:47:16.627Z  INFO 8 --- [nio-8080-exec-3] h.c.c.api.controller.FrontappController  : Backapp call was successful, response was: BackappResponse[time=2024-04-14T14:47:16.550749191, message=Hello, homeworkOwner=Dézsi Lajos, hostAddress=172.24.0.2, extraImageData=Cubix training]
+frontend-1  | 2024-04-14T14:47:16.631Z  INFO 8 --- [nio-8080-exec-3] h.c.c.api.controller.FrontappController  : Response will be: FrontappResponse[msForReply=65, backappMessage=Hello, frontappHomeworkOwner=Dézsi Lajos, frontappHostAddress=172.24.0.3, backappHomeworkOwner=Dézsi Lajos, backappHostAddress=172.24.0.2, doExtraImageDataMatch=true]
+frontend-1  | 2024-04-14T14:47:24.535Z  INFO 8 --- [nio-8080-exec-4] h.c.c.api.controller.FrontappController  : Preparing for calling backapp - message was: null
+frontend-1  | 2024-04-14T14:47:24.536Z  INFO 8 --- [nio-8080-exec-4] h.c.c.api.controller.FrontappController  : Calling backapp
+backend-1   | 2024-04-14T14:47:24.538Z  INFO 8 --- [nio-8081-exec-2] hu.cubix.cloud.api.BackappController     : Request arrived with message
+backend-1   | 2024-04-14T14:47:24.538Z  INFO 8 --- [nio-8081-exec-2] hu.cubix.cloud.api.BackappController     : Message was empty, fall back to default
+backend-1   | 2024-04-14T14:47:24.538Z  INFO 8 --- [nio-8081-exec-2] hu.cubix.cloud.api.BackappController     : Default message was empty, falling back to hardcoded default
+backend-1   | 2024-04-14T14:47:24.539Z  INFO 8 --- [nio-8081-exec-2] hu.cubix.cloud.api.BackappController     : Returning response: BackappResponse[time=2024-04-14T14:47:24.538961426, message=hardcoded-default-backapp-message, homeworkOwner=Dézsi Lajos, hostAddress=172.24.0.2, extraImageData=Cubix training]
+frontend-1  | 2024-04-14T14:47:24.541Z  INFO 8 --- [nio-8080-exec-4] h.c.c.api.controller.FrontappController  : Backapp call was successful, response was: BackappResponse[time=2024-04-14T14:47:24.538961426, message=hardcoded-default-backapp-message, homeworkOwner=Dézsi Lajos, hostAddress=172.24.0.2, extraImageData=Cubix training]
+frontend-1  | 2024-04-14T14:47:24.542Z  INFO 8 --- [nio-8080-exec-4] h.c.c.api.controller.FrontappController  : Response will be: FrontappResponse[msForReply=2, backappMessage=hardcoded-default-backapp-message, frontappHomeworkOwner=Dézsi Lajos, frontappHostAddress=172.24.0.3, backappHomeworkOwner=Dézsi Lajos, backappHostAddress=172.24.0.2, doExtraImageDataMatch=true]
+frontend-1  | 2024-04-14T14:50:20.335Z  INFO 8 --- [nio-8080-exec-6] h.c.c.api.controller.FrontappController  : Local endpoint was called - no call will be made to backapp - message was: Hello

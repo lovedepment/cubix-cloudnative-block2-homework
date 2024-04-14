@@ -1,3 +1,4 @@
+# Elso megoldas mukodik, de nem a legszerencsesebb
 docker build -t cubix-homework-dezsi-lajos .
 docker inspect cubix-homework-dezsi-lajos
 
