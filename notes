@@ -1,0 +1,5 @@
+docker build -t cubix-homework-dezsi-lajos .
+docker inspect cubix-homework-dezsi-lajos
+
+docker run --name homework -p 8080:8080 --rm cubix-homework-dezsi-lajos
+docker stop homework
