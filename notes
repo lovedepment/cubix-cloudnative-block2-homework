@@ -3,3 +3,14 @@ docker inspect cubix-homework-dezsi-lajos
 
 docker run --name homework -p 8080:8080 --rm cubix-homework-dezsi-lajos
 docker stop homework
+
+# Masodik megoldas container build, hogy a Docker Compose mukodjon
+## frontend
+docker build -f Dockerfile -t frontapp .
+## backend
+docker build -f Dockerfile --build-arg TYPE=backapp -t backapp .
+
+
+# Docker Compose commands
+docker compose up
+docker compose down
