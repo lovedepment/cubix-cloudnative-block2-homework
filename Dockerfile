@@ -16,4 +16,6 @@ USER 1001
 WORKDIR /opt/app
 
 COPY --chown=1001 ${TYPE}/target/*.jar app.jar
-CMD ["java", "-jar", "app.jar"]
+COPY --chown=1001 ${TYPE}/start.sh start.sh
+
+CMD ./start.sh
