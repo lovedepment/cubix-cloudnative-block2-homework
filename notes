@@ -17,3 +17,13 @@ docker inspect backapp
 # Docker Compose commands
 docker compose up
 docker compose down
+
+--------------------
+Házi feladat javitas
+
+## frontend build
+docker build -f Dockerfile -t frontapp frontapp
+docker inspect frontap
+## backend build
+docker build -f Dockerfile -t backapp backapp
+docker inspect backapp 
